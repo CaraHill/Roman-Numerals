@@ -14,6 +14,14 @@ function toRoman(number) {
       return romanNumerals[key];
     }
   }
+
+  let numeral = "";
+
+  for (let i = 0; i < number; i++) {
+    numeral += romanNumerals[1]
+  }
+
+  return numeral;
 }
 
 export default toRoman
