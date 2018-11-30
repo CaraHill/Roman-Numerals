@@ -3,8 +3,8 @@ import toRoman from './roman-numerals';
 describe('toRoman()', () => {
   test('converts 1', () => expect(toRoman(1)).toEqual('I'));
   test('converts 2', () => expect(toRoman(2)).toEqual('II'));
-  xtest('converts 3', () => expect(toRoman(3)).toEqual('III'));
-  xtest('converts 4', () => expect(toRoman(4)).toEqual('IV'));
+  test('converts 3', () => expect(toRoman(3)).toEqual('III'));
+  test('converts 4', () => expect(toRoman(4)).toEqual('IV'));
   xtest('converts 5', () => expect(toRoman(5)).toEqual('V'));
   xtest('converts 6', () => expect(toRoman(6)).toEqual('VI'));
   xtest('converts 9', () => expect(toRoman(9)).toEqual('IX'));

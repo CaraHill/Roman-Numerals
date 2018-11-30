@@ -9,13 +9,17 @@ function toRoman(number) {
     1000: "M"
   }
 
+  let numeral = "";
+
   for(let key in romanNumerals) {
-    if (key == number) {
+    if (number == key) {
       return romanNumerals[key];
     }
-  }
 
-  let numeral = "";
+    if (number == (key - 1)) {
+      return numeral + romanNumerals[1] + romanNumerals[key];
+    }
+  }
 
   for (let i = 0; i < number; i++) {
     numeral += romanNumerals[1]
